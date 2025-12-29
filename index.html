@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FixIT School - Documentation</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <div class="grid-bg"></div>
+
+    <nav class="side-panel">
+        <div class="panel-handle">
+            <i class="fa-solid fa-bars"></i>
+            <span class="vertical-text">MENU</span>
+        </div>
+        <div class="panel-content">
+            <h3>Navigazione</h3>
+            <ul>
+                <li><a href="#home" class="active"><i class="fa-solid fa-home"></i> Home</a></li>
+                <li><a href="#architettura"><i class="fa-solid fa-network-wired"></i> Architettura</a></li>
+                <li><a href="#installazione"><i class="fa-solid fa-download"></i> Installazione</a></li>
+                <li><a href="#licenza"><i class="fa-solid fa-scale-balanced"></i> Licenza</a></li>
+                <li><a href="#wiki"><i class="fa-solid fa-book"></i> Wiki Completa</a></li>
+            </ul>
+            
+            <hr>
+            
+            <h3>Link Esterni</h3>
+            <ul>
+                <li><a href="https://github.com/FixIT-Scool/FixIT-School-Security" target="_blank"><i class="fa-brands fa-github"></i> Repository</a></li>
+                <li><a href="#" target="_blank"><i class="fa-solid fa-bug"></i> Segnala Bug</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="wiki-container">
+        
+        <header id="home" class="hero-section">
+            <div class="terminal-window">
+                <div class="terminal-header">
+                    <span class="dot red"></span>
+                    <span class="dot yellow"></span>
+                    <span class="dot green"></span>
+                    <span class="title">bash - fixit-intro</span>
+                </div>
+                <pre class="ascii-art">
+  ______ _      _____ _______   _____      _                 _ 
+ |  ____(_)    |_   _|__   __| / ____|    | |               | |
+ | |__   ___  __ | |    | |   | (___   ___| |__   ___   ___ | |
+ |  __| | \ \/ / | |    | |    \___ \ / __| '_ \ / _ \ / _ \| |
+ | |    | |>  < _| |_   | |    ____) | (__| | | | (_) | (_) | |
+ |_|    |_/_/\_\_____|  |_|   |_____/ \___|_| |_|\___/ \___/|_|
+                                                               
+                :: SECURITY & TICKETING SYSTEM ::              
+                </pre>
+            </div>
+            <h1>Benvenuto nella Documentazione</h1>
+            <p class="subtitle">Sistema decentralizzato per la gestione manutenzione scolastica.</p>
+        </header>
+
+        <section id="architettura" class="wiki-block">
+            <h2 class="section-title">1. Architettura del Sistema</h2>
+            <p>FixIT School utilizza un approccio decentralizzato per permettere a plessi scolastici complessi di gestire le segnalazioni senza colli di bottiglia.</p>
+            
+            
+
+            <div class="note-box">
+                <strong><i class="fa-solid fa-info-circle"></i> Nota Tecnica:</strong>
+                Il sistema differenzia tra nodi "Studenti" (solo invio) e nodi "Admin/Tecnici" (ricezione e gestione), garantendo sicurezza tramite token univoci.
+            </div>
+        </section>
+
+        <section id="licenza" class="wiki-block">
+            <h2 class="section-title">2. Licenza & Clausole</h2>
+            <div class="license-card">
+                <div class="license-header">
+                    <i class="fa-solid fa-file-contract"></i> MIT LICENSE (Modified)
+                </div>
+                <div class="license-body">
+                    <p>L'uso di questo software è concesso gratuitamente agli istituti scolastici pubblici.</p>
+                    <ul>
+                        <li><i class="fa-solid fa-check"></i> <strong>Permesso:</strong> Uso commerciale e privato.</li>
+                        <li><i class="fa-solid fa-check"></i> <strong>Permesso:</strong> Modifica del codice sorgente.</li>
+                        <li><i class="fa-solid fa-triangle-exclamation"></i> <strong>Clausola:</strong> Non è permessa la rivendita del software a terzi senza autorizzazione.</li>
+                    </ul>
+                    <a href="#" class="btn-git">Leggi licenza completa <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <section id="wiki" class="wiki-block">
+            <h2 class="section-title">3. Guida all'Installazione</h2>
+            <p>Per avviare il server locale, clonare la repository e installare le dipendenze.</p>
+            
+            <div class="code-block">
+                <div class="code-header">bash</div>
+                <code>
+git clone https://github.com/FixIT-Scool/FixIT-School-Security.git
+                </code>
+            </div>
+        </section>
+
+        <footer>
+            <p>Maintained by <a href="https://github.com/FixIT-Scool">FixIT-School Team</a> &copy; 2024</p>
+        </footer>
+
+    </main>
+    
+    <script src="script.js"></script>
+</body>
+</html>
